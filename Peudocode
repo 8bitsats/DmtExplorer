@@ -1,0 +1,26 @@
+Backend Lua
+
+function fetchTokenData():
+    Connect to Bitcoin blockchain
+    Fetch inscriptions based on Digital Matter Theory format
+    Parse JSON data of tokens
+    Store data in searchable format
+
+function queryTokenData(parameters):
+    Search the database for tokens matching the parameters
+    Return results
+
+Frontend SQL
+
+function displaySearchInterface():
+    Provide input fields for searching tokens (e.g., by ticker, block number)
+    Add search button to initiate query
+
+function displayTokenData(tokenData):
+    Show details of the token (parsed JSON data) in a readable format
+
+On Search Button Click:
+    Call queryTokenData() with search parameters
+    Display results using displayTokenData()
+
+Node.js backend
